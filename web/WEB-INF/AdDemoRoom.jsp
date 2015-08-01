@@ -3,6 +3,7 @@
     Created on : Mar 13, 2009, 10:44:29 PM
     Author     : rou
 --%>
+<a href="AdDemoRoom.jsp"></a>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@ page import="FYPManagementSys_Bean.DB" %>

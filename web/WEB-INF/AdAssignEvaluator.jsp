@@ -44,6 +44,7 @@ int room_row=0;
 int pro_ev_row =0;
 
 DB objDB = new DB();
+//if (true == false) { 
 
  if ((!(UserSession==null))&&(UserType.equals("3"))) {
      objDB.connect();
@@ -118,10 +119,9 @@ DB objDB = new DB();
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         
         <title>Final Year Project Management System</title>
-    </head>
-    <style type="text/css">
+            <style type="text/css">
     .Show{
-            display: ;
+            display: block;
     }
     .Hide{
             display:none;
@@ -133,10 +133,13 @@ DB objDB = new DB();
             color:red;
     }
     </style>
-    <script type="text/javascript">
+    </head>
+
+    
+    <body>
+        <script type="text/javascript">
         var numOfTitle=<%=title_row%>;
     </script>
-    <body>
           
         <div id="Wrapper" style="padding-top:50px;">
          <%@ include file="headeradmin.jsp" %>
@@ -174,7 +177,7 @@ DB objDB = new DB();
                                 <td>Day</td>
                                 <td>&emsp;</td>
                                 <td><select class="form-control" name="day" disabled onchange="selectRoomDay()">
-                                        <option value="">Please Select</option>selectRoomDay
+                                        <option value="">Please Select</option>
                                         <option value="1">Sunday</option>
                                         <option value="2">Monday</option>
                                         <option value="3">Tuesday</option>
@@ -201,7 +204,7 @@ DB objDB = new DB();
                                           day="Thursday";
                                         else if(c==5)
                                           day="Friday";   
-                                           %>
+//                                           %>
                                 <table class="Hide" id="day<%=c%>_<%=roomID.get(numOfRoom)%>">
                                     <tr><td  colspan="4" style="font-weight:bold">Day : <%=day%> &nbsp;  Room: <%=roomName.get(numOfRoom)%></td>
                                     </tr>
@@ -338,7 +341,6 @@ DB objDB = new DB();
                                 <td>Examiner 2</td>                 
                             </tr>
                             <%for (int i=0;i<title_row;i++){%>
-                            <tr>
                                 <td><%=metricNo.get(i)%></td>
                                 <td><%=title.get(i)%></td>
                                 <td><%
@@ -349,13 +351,13 @@ DB objDB = new DB();
                                                  " and b.active='Active'";
                                     objDB.query(query);
                                     %>
+                                    <% out.print(ex2No.get(i)); %>
                                     <select  id="assignEX1<%=metricNo.get(i)%>" class="form-control" onchange="assignvalueEX1('<%=metricNo.get(i)%>')" >
-                                        <option value="">Please Select</option>
+                                        <option value="1000">Please Select</option>
                                         <%for(int j=0;j<objDB.getNumberOfRows();j++){%>
-                                        <option  <%if(ex1No.get(i).equals(objDB.getDataAt(j, "staffNo"))){%>selected<%}%> value="<%=objDB.getDataAt(j, "staffNo")%>"><%=objDB.getDataAt(j, "LectName")%></option>
+                                        <option  value="<%=objDB.getDataAt(j, "staffNo")%>"><%=objDB.getDataAt(j, "LectName")%></option>
                                         <%}%>
                                     </select>
-                                    
                                 </td>
                                 <td>
                                     <%
@@ -369,7 +371,7 @@ DB objDB = new DB();
                                     <select  id="assignEX2<%=metricNo.get(i)%>" class="form-control" onchange="assignvalueEX2('<%=metricNo.get(i)%>')"  class="form-control">
                                         <option value="">Please Select</option>
                                         <%for(int j=0;j<objDB.getNumberOfRows();j++){%>
-                                        <option <%if(ex2No.get(i).equals(objDB.getDataAt(j, "staffNo"))){%>selected<%}%> value="<%=objDB.getDataAt(j, "staffNo")%>"><%=objDB.getDataAt(j, "LectName")%></option>
+                                        <option value="<%=objDB.getDataAt(j, "staffNo")%>"><%=objDB.getDataAt(j, "LectName")%></option>
                                         <%}%>
                                     </select>
                                 </td>
