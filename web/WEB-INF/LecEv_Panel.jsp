@@ -30,7 +30,7 @@ ArrayList marks_ev1_psm2 = new ArrayList();
 String color ="#fff0f5";
 String queryProfile ="Select* from lecturer where staffNo='"+UserSession+"'";
 
- if ((!(UserSession==null))&&(UserType.equals("2"))|| (UserType.equals("3"))) {
+ if ((!(UserSession==null))&&(UserType.equals("2"))) {
      String proURL="Images/project1.jpg";
      String psm2URL="";
      objDB.connect();

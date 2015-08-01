@@ -42,11 +42,10 @@ public class ServMenu extends HttpServlet {
             else if(PageType.equals("ServStudSelectSV"))
             {
              address="./ServStudSelectSV";
-            } else {
-                address="/WEB-INF/"+PageType+".jsp";
             }
             
             
+            address="/WEB-INF/"+PageType+".jsp";
             RequestDispatcher dispatcher = request.getRequestDispatcher(address);
             dispatcher.forward(request, response);
         

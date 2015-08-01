@@ -70,7 +70,6 @@ public class ServAdGenerateTTable extends HttpServlet {
                objDB.close();
                address="/WEB-INF/AdGenerateTTable.jsp";  
             }
-            
             else if(option.equals("psm2")){
                 DB objDB = new DB();
                 objDB.connect();
