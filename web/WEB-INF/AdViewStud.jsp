@@ -165,7 +165,7 @@ String selectedSemester = (String)request.getAttribute("semester");
   </div>
             </div>
                     <%if(((!selectedPSM.equals(""))&&(!selectedSemester.equals("")))){%>
-                    <table id="expertise" class="table table-hover table-bordered"style="width:90%">
+                    <table id="expertise" class="table table-hover table-bordered"style="width:90%; background: #fff">
                         <tr style="font-weight:bold" align="center">
                              <td width="20px">No.</td>   
                              <td width="300px">Name</td>

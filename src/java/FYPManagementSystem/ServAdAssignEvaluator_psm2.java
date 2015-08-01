@@ -31,6 +31,7 @@ public class ServAdAssignEvaluator_psm2 extends HttpServlet {
             objDB.connect();
             String [] roomID = request.getParameterValues("roomID");
             objDB.query("delete from project_evaluation_psm2");
+            System.out.println("Testing here");
               for(int k=0;k<roomID.length;k++)
                 {
                   
