@@ -32,11 +32,7 @@ public class DB{
       ///*
       db = "//localhost:3306/finalyearproject";  
       user = "root";
-<<<<<<< Updated upstream
-      pwd = "elida";
-=======
-      pwd = "";
->>>>>>> Stashed changes
+      pwd = "iskandar";
       //*/
       
       /*
