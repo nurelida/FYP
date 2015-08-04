@@ -4,8 +4,23 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+<<<<<<< HEAD
             <file>file:/Users/naqibsalihoddin/Documents/Github/FYP/web/style.css</file>
             <file>file:/Users/naqibsalihoddin/Documents/Github/FYP/src/java/FYPManagementSys_Bean/DB.java</file>
+=======
+<<<<<<< HEAD
+            <file>file:/C:/Users/Elisa/Documents/GitHub/FYP/web/WEB-INF/AdDepartment.jsp</file>
+            <file>file:/C:/Users/Elisa/Documents/GitHub/FYP/src/java/FYPManagementSys_Bean/DB.java</file>
+            <file>file:/C:/Users/Elisa/Documents/GitHub/FYP/web/js/AdDepartment.js</file>
+            <file>file:/C:/Users/Elisa/Documents/GitHub/FYP/web/WEB-INF/LecHome.jsp</file>
+            <file>file:/C:/Users/Elisa/Documents/GitHub/FYP/web/WEB-INF/LecStudAcceptance.jsp</file>
+=======
+            <file>file:/C:/Users/DELL/Documents/GitHub/FYP/web/WEB-INF/AdAssignEvaluator.jsp</file>
+            <file>file:/C:/Users/DELL/Documents/GitHub/FYP/web/WEB-INF/StudSelectSV.jsp</file>
+            <file>file:/C:/Users/DELL/Documents/GitHub/FYP/web/js/StudSelectSV.js</file>
+            <file>file:/C:/Users/DELL/Documents/GitHub/FYP/src/java/FYPManagementSystem/ServLecEvaluation_Chairman.java</file>
+>>>>>>> origin/master
+>>>>>>> origin/master
         </group>
     </open-files>
 </project-private>
