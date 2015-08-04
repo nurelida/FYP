@@ -146,7 +146,7 @@ DB objDB = new DB();
   </div>
   <div class="panel-body">
                         <table>
-                            <tr style="font-weight:bold ; color:#740f2d;">
+                            <tr >
                                 
                                 <td>Room</td>
                                 <td>&emsp;</td>
@@ -159,7 +159,7 @@ DB objDB = new DB();
                                 </td>
                             </tr>
                             <tr><td><br></td></tr>
-							<tr style="font-weight:bold ;color: #740f2d;">
+							<tr >
                                 
                                 <td>Day</td>
                                 <td>&emsp;</td>

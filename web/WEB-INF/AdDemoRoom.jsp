@@ -83,7 +83,6 @@ if ((!(UserSession==null))&&(UserType.equals("3"))) {
          
          <%@ include file="headeradmin.jsp" %>
 			 <img src="Images/headerbg3.png" alt="" class="home-img">
-
     
     <div style="height:auto" id="WrapperBody">
         

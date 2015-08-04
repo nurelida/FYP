@@ -109,9 +109,9 @@ String Name = (String)session.getAttribute("name");
         
 
         <center>
-          <h2 style=color:#FCF5CA >Department</h2>
+          <h2 style="color:#FCF5CA; font-weight:bold;">Department</h2>
                 <span>
-                    <table style="width:50%" class="table table-bordered table-hover">
+                    <table style="width:50%" class="table table-bordered">
                     <form name="editExpertise">
                         <tr bgcolor="#FCF5CA" style="color:#740F2D ; font-weight:bold" align="center">
                             <td  width="50px">Code</td>
@@ -162,9 +162,9 @@ String Name = (String)session.getAttribute("name");
                                 <br>
                                    
                                        
-                                        <table class="table table-bordered">
-                                            <tr bgcolor="#ebebeb" >
-                                                <td colspan="4" align="center"><b>Add Department</td>
+                                        <table class="table table-bordered" style="background:white;">
+                                            <tr bgcolor="#fcf5ca" >
+                                                <td colspan="4" align="center"><b style="color:#470f2d;">Add Department</td>
                                             </tr>
                                                  <tr>
                                                     <td>Name</td>

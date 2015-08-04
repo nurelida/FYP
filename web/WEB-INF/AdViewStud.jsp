@@ -130,7 +130,7 @@ String selectedSemester = (String)request.getAttribute("semester");
   <div class="panel-heading" style="background: #FCF5CA;">
       <h2 style="font-weight:bold;color:#740f2d" class="panel-title">Select Student</h2>
   </div>
-  <div class="panel-body alert-warning" style="background:white;">
+  <div class="panel-body" style="background:white; color:black;">
                 <span>
                     <table>
                         <tr>

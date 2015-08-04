@@ -107,7 +107,7 @@ String Name = (String)session.getAttribute("name");
 							<h3 style="color:#740F2D" class="panel-title"><b>Project Evaluation</b></h3>
   </div>
   <div class="panel-body ">
-	  <table id="expertise" style="font-weight:bold; width:100%; color:#740F2D;">
+	  <table id="expertise" style="font-weight:bold; width:100%; ">
                         <tr>
                             <td>Bachelor Project</td>
                             <td width="5px"></td>

@@ -124,10 +124,10 @@ String lectNameProfile="";
 						 <div class="panel-heading" style="background-color: #FCF5CA">
 							 <h3 style="font-weight:bold; color:#740F2D" class="panel-title"><b>Project Proposal Evaluation</b></h3>
   </div>
-  <div class="panel-body alert-warning" style="background:white;">
+  <div class="panel-body " style="background:white;">
                     <table class="table table-bordered">
                     <form name="studentAcceptance">
-						<tr bgcolor="#fff" style="font-weight:bold;color:#740F2D" align="center">
+						<tr bgcolor="#fff"  align="center">
                              <td width="20px">No.</td>   
                              <td  width="200px">Student's Name</td>
                              <td  width="250px">Project Title</td>
