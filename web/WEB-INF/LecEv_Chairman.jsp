@@ -53,9 +53,21 @@ String color ="#fff0f5";
 
     <head>
         
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link rel="stylesheet" type="text/css" href="css/titleSuggestion.css">
-        <script type="text/javascript" src="js/LecEvaluation.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="css/table.css">
+		<link rel="stylesheet" type="text/css" href="css/button.css"> 
+		<link rel="stylesheet" type="text/css" href="css/titleSuggestion.css">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="js/jquery.min.js"></script>
+
+
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/dropdown.js"></script>
+		<script src="js/profile-pass.js"></script>
+		<script src="js/updateProfile.js"></script>
+		<script type="text/javascript" src="js/LecExpertise.js"></script>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         
         <title>Final Year Project Management System</title>
     </head>
@@ -64,7 +76,7 @@ String color ="#fff0f5";
     <body>
        
       
-      <div id="Wrapper">
+      <div id="Wrapper" style="padding-top:50px;">
           <div id="Top">
             <div id="TopContent">
                 

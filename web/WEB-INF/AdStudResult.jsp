@@ -202,7 +202,7 @@ int row = -1;
   </div>
   <div class="panel-body ">
                 <span>
-					<table style="color:#740f2d;">
+					<table>
                         <tr >
                             <td><b>Bachelor Project</b></td>
                             <td>&nbsp;</td>
@@ -236,15 +236,15 @@ int row = -1;
                                 <br>
                     <%if(((!selectedPSM.equals(""))&&(!selectedSemester.equals("")))){
                         if(selectedPSM.equals("psm_1")){ %>
-                    <table class="table table-hover table-bordered"style="width:70%">
-                        <tr style="background-color: #fff;font-weight:bold;vertical-align:bottom;text-align:center" >
+                    <table class="table table-bordered"style="width:70% ; background:white;">
+                        <tr style="background-color: #fcf5ca;font-weight:bold;vertical-align:bottom;text-align:center" >
                              <td valign="bottom" rowspan="2"  width="10px" >No.</td> 
                              <td rowspan="2"  width="250px">Name</td> 
                              <td colspan="3"  >Evaluation Marks</td> 
                              <td rowspan="2"   >Grade</td>
                              <td >Action</td>
                         </tr>
-                        <tr style="background-color: #fff;font-weight:bold;text-align:center">
+                        <tr style="background-color: #fcf5ca;font-weight:bold;text-align:center">
                              <td>Chairman</td>
                              <td>Panel</td>
                              <td>Supervisor</td>

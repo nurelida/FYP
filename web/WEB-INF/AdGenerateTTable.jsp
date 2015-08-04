@@ -126,7 +126,7 @@ int q_row=0;
 								<h2 style="color:#740F2D" class="panel-title"><b>Assign Chairman and Panel PSM 1</h2>
   </div>
   <div class="panel-body">
-	  <b style="color:#740F2D;">Presentation Room&emsp;
+	  <b >Presentation Room&emsp;
                             <select name="demoRoom" onchange="showTable('generate')">
                                     <option value="">Please Select</option>
                                     <% for(int i=0;i<room_row;i++){%>

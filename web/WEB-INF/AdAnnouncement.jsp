@@ -105,11 +105,11 @@ String Name = (String)session.getAttribute("name");
 
     				<div style="height:auto" id="WrapperBody">
          				<center>
-          					<h2>Announcement</h2>
+          					<h2 style="font-weight:bold; color: #fcf5ca;">Announcement</h2>
                 				<span>
-                    				<table style="width:80%" class="table table-bordered table-hover">
+                    				<table style="width:80%; background:white;" class="table table-bordered ">
 										<form name="editExpertise">
-											<tr bgcolor="#ebebeb" style="font-weight:bold" align="center">
+											<tr style="font-weight:bold;background:#fcf5ca;color:#740f2d;" align="center">
 												<td  width="550px">Announcement</td>
 												<td  width="50px">Edit</td>
 												<td  width="50px">Delete</td>
@@ -152,9 +152,9 @@ String Name = (String)session.getAttribute("name");
                             				<td colspan="3" class="addAnnHide" id="itemAddAnn">
                                 				<br style="line-height:5px">
                                 				<br>                         
-                                       				<table class="table table-bordered">
-                                            			<tr bgcolor="#ebebeb" >
-                                                		<td colspan="4" align="center"><b>Add Announcement</td>
+                                       				<table class="table table-bordered" style="background:white;">
+                                            			<tr bgcolor="#fcf5ca" >
+                                                		<td colspan="4" align="center"><b style="color:#740f2d">Add Announcement</td>
                                             			</tr>
                                                  <tr>
                                                     <td>Title</td>

@@ -279,12 +279,12 @@ String selectedSemester = (String)request.getAttribute("semester");
         <center>
             <br><br>
             
-            <div style="width:85%" class="panel panel-default">
-  <div class="panel-heading">
-      <h2 style="color:#000" class="panel-title">Evaluation Scheme</h2>
+            <div style="width:85% ; background: white;" class="panel panel-default">
+  <div class="panel-heading" style="background: #fcf5ca;">
+      <h2 style="color:#470f2d; font-weight:bold;" class="panel-title">Evaluation Scheme</h2>
   </div>
-  <div class="panel-body alert-warning">
-       <table  class="table table-bordered">
+  <div class="panel-body">
+       <table  class="table table-bordered" style="color:black">
            <tr align="center">
                             <td>No</td>
                             <td>Evaluation Scheme</td>
@@ -338,9 +338,9 @@ String selectedSemester = (String)request.getAttribute("semester");
                                 <br>
                                    
                                        
-                                        <table class="table table-bordered">
-                                            <tr bgcolor="#ebebeb" >
-                                                <td colspan="4" align="center"><b>Add Scheme</td>
+                                        <table class="table table-bordered" style="background:white">
+                                            <tr bgcolor="#fcf5ca" >
+                                                <td colspan="4" align="center"><b style="color:#470f2d">Add Scheme</td>
                                             </tr>
                                                  <tr>
                                                     <td>Title</td>

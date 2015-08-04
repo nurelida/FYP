@@ -69,11 +69,11 @@ if ((!(UserSession==null))&&(UserType.equals("3"))) {
                 
                 <table width="640px"border="0">
                    <form  action="javascript:validateFormLecture()" method="POST" class="form-horizontal" >
-   <div style="width:70%" class="panel panel-default">
-  <div class="panel-heading">
-      <h2 style="color:#000" class="panel-title"><b>Register Lecturer</b></h2>
+   <div style="width:70% ; background: white;" class="panel panel-default">
+  <div class="panel-heading" style="background:#fcf5ca">
+      <h2 style="color:#740f2d" class="panel-title"><b>Register Lecturer</b></h2>
   </div>
-  <div class="panel-body alert-warning">    
+  <div class="panel-body">    
   <div id="studname-group" class="form-group">
     <div class="col-xs-8 col-xs-offset-1 input-group">
         <div  class="input-group-addon">Name&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;</div>
