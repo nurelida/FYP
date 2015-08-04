@@ -15,6 +15,9 @@
 String UserSession = (String)session.getAttribute("user");
 String UserType = (String)session.getAttribute("userType");
 String Name = (String)session.getAttribute("name");
+
+
+
 String color = "#fff0f5";
 String evaluateWithoutSchedule="hide";
 ArrayList ev1 = new ArrayList();
@@ -23,8 +26,11 @@ ArrayList ev1No = new ArrayList();
 ArrayList ev2No = new ArrayList();
 ArrayList room = new ArrayList();
 ArrayList ev_slot = new ArrayList();
+
 ArrayList ex1No=new ArrayList();
+ArrayList ex1Name=new ArrayList();
 ArrayList ex2No=new ArrayList();
+
 ArrayList title = new ArrayList();
 ArrayList metricNo = new ArrayList();
 ArrayList sv = new ArrayList();
@@ -37,6 +43,11 @@ ArrayList studMetricNo = new ArrayList();
 ArrayList studSession = new ArrayList();
 ArrayList studSlot = new ArrayList();
 ArrayList studRoom = new ArrayList();
+
+
+ArrayList lectName = new ArrayList();
+ArrayList staffNo = new ArrayList();
+
 
 int row=0;
 int title_row =0;
@@ -62,6 +73,9 @@ DB objDB = new DB();
              ev2No.add(objDB.getDataAt(i,"ev2"));
              ev1.add(objDB.getDataAt(i,"ev1Name"));
              ev2.add(objDB.getDataAt(i,"ev2Name"));
+             
+             
+           
          }
      objDB.query("SELECT a.proTitle, a.metricNo, b.proField, c.staffNo as supervisor "+
                     "from title a "+
@@ -99,12 +113,26 @@ DB objDB = new DB();
          String querygetidexaminer="select coalesce(examiner1No,'UNKNOWN')as examiner1No,coalesce(examiner2No,'')as examiner2No from evaluator where metricNo='"+String.valueOf(metricNo.get(i))+"'";
          
          objDB.query(querygetidexaminer);
-         ex1No.add(objDB.getDataAt(0, "examiner1No"));
-         ex2No.add(objDB.getDataAt(0, "examiner2No"));
+         ex1No.add(objDB.getDataAt(i, "examiner1No"));
+         ex2No.add(objDB.getDataAt(i, "examiner2No"));
+         //ex1Name.add(objDB.getDataAt(i, "examiner1Name"));
+         
+         if(ex1No.get(i)==null)
+           { ex1No.set(i,"");
+           }
      }
      
-     
-     
+     String queryLec ="select lectName, staffNo from lecturer order by lectName";
+     objDB.query(queryLec);
+     //lecRow=objDB.getNumberOfRows();
+
+     for(int i=0;i<objDB.getNumberOfRows();i++)
+     {
+        lectName.add(objDB.getDataAt(i,"lectName"));
+        staffNo.add(objDB.getDataAt(i,"staffNo"));
+        
+        
+     }
 %>
 <html>
 
@@ -351,11 +379,29 @@ DB objDB = new DB();
                                                  " and b.active='Active'";
                                     objDB.query(query);
                                     %>
-                                    <% out.print(ex2No.get(i)); %>
+                                    
+                                    <% out.print(ex1No.get(i)); %>
+                                    <%=ex1No.get(i)%>
+                                    
+                                
+                                  
                                     <select  id="assignEX1<%=metricNo.get(i)%>" class="form-control" onchange="assignvalueEX1('<%=metricNo.get(i)%>')" >
-                                        <option value="1000">Please Select</option>
+                                       
+                                        <option value="">Please Select</option>
                                         <%for(int j=0;j<objDB.getNumberOfRows();j++){%>
-                                        <option  value="<%=objDB.getDataAt(j, "staffNo")%>"><%=objDB.getDataAt(j, "LectName")%></option>
+                                        
+                                        <%--<option value="<%=objDB.getDataAt(j, "staffNo")%>"><%=objDB.getDataAt(j, "lectName")%>   </option>--%>
+                                        
+                                        <%--<%if(ex1No.get(i).equals(objDB.getDataAt(j, "staffNo")))   {%>selected<%}%> --%>
+                                        
+                                        <%--    <option value="Conditional Approval (Major)" <%if(statusTitle.equals("Conditional Approval (Major)")){%> selected <%}%>>Conditional Approval(Major)</option>   --%>
+                                        
+                                        <option <%if((staffNo.get(j).equals(ex1No.get(i)))){%>selected<%}%> value="<%=staffNo.get(j)%>"><%=lectName.get(j)%> </option>
+                                      
+                                        <%--<option value="<%=staffNo.get(j)%>" <%if((staffNo.get(j).equals(svNo.get(i)))){%> disabled <%}%>  ><%=lecName.get(j)%></option>--%>
+                                        
+                                        
+                                        
                                         <%}%>
                                     </select>
                                 </td>
@@ -368,10 +414,14 @@ DB objDB = new DB();
                                                  " and b.active='Active'";
                                     objDB.query(query2);
                                     %>
+                                    
+                                    
+                                    <% out.print(ex2No.get(i)); %>
                                     <select  id="assignEX2<%=metricNo.get(i)%>" class="form-control" onchange="assignvalueEX2('<%=metricNo.get(i)%>')"  class="form-control">
                                         <option value="">Please Select</option>
                                         <%for(int j=0;j<objDB.getNumberOfRows();j++){%>
                                         <option value="<%=objDB.getDataAt(j, "staffNo")%>"><%=objDB.getDataAt(j, "LectName")%></option>
+                                        <%--<option value="<%=objDB.getDataAt(j, "staffNo")%>" <%if(ex1No.get(i).equals(objDB.getDataAt(j, "staffNo"))){%> selected <%}%>  ><%=objDB.getDataAt(j, "LectName")%></option>--%>
                                         <%}%>
                                     </select>
                                 </td>

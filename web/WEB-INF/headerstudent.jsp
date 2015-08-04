@@ -49,7 +49,7 @@
                     <ul style="float:right;padding-top: 9px" class="nav navbar-nav">
                         <li style="padding-top: 7px; color:white;">Welcome Student, <%=Name%>&nbsp;</li>  
                       <li class="dropdown">
-					<button class="btn btn-default btn-signout " onclick="location.href='./ServMenu?Page=Logout'">Logout&emsp;<i class="glyphicon glyphicon-log-out"></i></button>
+					<button class="btn btn-default btn-signout " onclick="location.href='./ServMenu?Page=Home'">Logout&emsp;<i class="glyphicon glyphicon-log-out"></i></button>
 				</li>
                     </ul>
 		</div>
