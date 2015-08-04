@@ -109,11 +109,11 @@ String Name = (String)session.getAttribute("name");
         
 
         <center>
-          <h2>Department</h2>
+          <h2 style=color:#FCF5CA >Department</h2>
                 <span>
                     <table style="width:50%" class="table table-bordered table-hover">
                     <form name="editExpertise">
-                        <tr bgcolor="#ebebeb" style="font-weight:bold" align="center">
+                        <tr bgcolor="#FCF5CA" style="color:#740F2D ; font-weight:bold" align="center">
                             <td  width="50px">Code</td>
                             <td  width="550px">Department</td>
                             <td  width="50px">Edit</td>
@@ -130,7 +130,7 @@ String Name = (String)session.getAttribute("name");
                                         
                                           
                            %>
-                       <tr>
+                       <tr bgcolor="white">
                            <td ><div style="font-weight:bold"><%=deptCode.get(i)%></div><br style="line-height:1px">
                             </td>
                            <td ><div style="font-weight:bold"><%=deptName.get(i)%></div><br style="line-height:1px">
@@ -209,7 +209,7 @@ String Name = (String)session.getAttribute("name");
                                 <br>
                              
                                             <table class="table table-bordered">
-                                                <tr bgcolor="#ebebeb">
+                                                <tr bgcolor="style=color:#FCF5CA">
                                                     <td colspan="4" align="center">
                                                         <b>Edit Announcement</b>
                                                     </td>
