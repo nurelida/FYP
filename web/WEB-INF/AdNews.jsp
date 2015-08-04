@@ -102,9 +102,9 @@ String Name = (String)session.getAttribute("name");
      
         <br><br>
               <form>
-        <table id="tableadd" class="table table-bordered hide"  style="width:40%">
+        <table id="tableadd" class="table table-bordered hide"  style="width:40% ; background:white;">
             <tr bgcolor="#fcf5ca">
-                <td colspan="2" align="center"><b>Add News</td>
+                <td colspan="2" align="center"><b style="color:#470f2d;">Add News</td>
             </tr>
             <tr>
                 <td>Title Name</td>
