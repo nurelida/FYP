@@ -157,11 +157,11 @@ String pembentangan = "";
     <br><br>
      <form name="comments"> 
     <div style="width:600px" class="panel panel-default">
-  <div class="panel-heading" style="background-color: whitesmoke">
-      <h3  class="panel-title"><b>Assessor Comments</b></h3>
+  <div class="panel-heading" style="background-color: #fcf5ca">
+      <h3  class="panel-title"><b style="color:#470f2d">Assessor Comments</b></h3>
   </div>
-  <div class="panel-body alert-warning">
-                        <table style="margin: auto;font-weight:bold">
+  <div class="panel-body ">
+                        <table style="margin: auto;font-weight:bold;color:black;">
                             <tr align="left">
                                 <td align="left">Bachelor Project&emsp;&emsp;&emsp;</td>
                                 <td><select class="form-control" name="psm" onchange="showPSM()">

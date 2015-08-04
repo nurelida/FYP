@@ -103,15 +103,15 @@ DB objDB = new DB();
 
         <br><br>
 <!--            <h2 class="text-capitalize">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;project search</h2>-->
-            <div style="width:700px;margin:auto;" class="panel panel-default">
-  <div class="panel-heading" style="background-color:whitesmoke">
-      <h3  class="panel-title"><b>Project Search Form</b></h3>
+            <div style="width:700px;margin:auto;background:white;" class="panel panel-default">
+  <div class="panel-heading" style="background-color:#ff5ca">
+      <h3  class="panel-title"><b style="color:#470f2d">Project Search Form</b></h3>
   </div>
-  <div class="panel-body alert-warning">
+  <div class="panel-body ">
             <form name="search">
                     <table style="float:left;padding-left: 50px" id="expertise">
                     
-                           <tr style="font-weight:bold;">
+                           <tr style="font-weight:bold; color:black">
                                 <td>&emsp;&emsp;&emsp;&emsp;&emsp;Categories</td>
                                 <td id="colon"></td>
                                 <td>
@@ -145,13 +145,13 @@ DB objDB = new DB();
 
                                 <br><br><br>
                         <%if(!(studNameSearch==null)){%>
-                        <table  style="width:1000px" class="table table-bordered table-hover alert-warning" >
-                        <tr style="font-weight:bold;color:#000" align="center">
-                                <td bgcolor="whitesmoke" width="20px">No.</td>
-                                <td bgcolor="whitesmoke" width="250px">Student Name</td>
-                                <td bgcolor="whitesmoke" width="200px">Project Title</td>
-                                <td bgcolor="whitesmoke" width="250px">Supervisor</td>
-                                <td bgcolor="whitesmoke" width="50px">Semester</td>
+                        <table  style="width:1000px; background:white;" class="table table-bordered table-hover"  >
+                        <tr style="font-weight:bold;color:#470f2d;background:#fcf5ca" align="center">
+                                <td  width="20px">No.</td>
+                                <td  width="250px">Student Name</td>
+                                <td  width="200px">Project Title</td>
+                                <td  width="250px">Supervisor</td>
+                                <td  width="50px">Semester</td>
                         </tr>
                            
 <% 

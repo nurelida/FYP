@@ -61,9 +61,9 @@
  <div  class="modal fade login" id="myprofile">
 		      <div id="modalheight" style="width:500px" class="modal-dialog login animated" >
     		      <div class="modal-content">
-    		         <div  class="modal-header">
+    		         <div  class="modal-header" style="background:#fcf5ca">
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4  class="modal-title">My Profile</h4>
+                        <h4  class="modal-title" style="color:#740f2d; font-weight:bold;">My Profile</h4>
                     </div>
                     <div class="modal-body">  
                         <div class="box">
@@ -200,7 +200,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="modal-footer">
+                    <div class="modal-footer" style="background:#fcf5ca">
                         <div class="forgot login-footer">
                             <span>
                                  <button style="margin: auto;width:40%" class="btn btn-block btn-info" onclick="showPasswordForm()">Change password&nbsp;<i class="fa fa-unlock"></i></button>

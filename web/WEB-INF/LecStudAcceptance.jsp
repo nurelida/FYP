@@ -169,7 +169,7 @@ String selectedSemester = (String)request.getAttribute("semester");
 						 </div>
 						 <div class="panel-body alert-warning" style="background:white;">
 							 <form name="studentAcceptance"> 
-								 <table style="color:#740f2d;">
+								 <table style="color:black;">
 									 <tr>
 										 <td><b>Bachelor Project</b></td>
 										 <td>&emsp;</td>
@@ -203,8 +203,8 @@ String selectedSemester = (String)request.getAttribute("semester");
 									 </div>
 								 </div>
 							 <%if(((!selectedPSM.equals(""))&&(!selectedSemester.equals("")))){%>
-								 <table style="width:80%" class="table table-bordered table-hover">
-									 <tr bgcolor="#ebebeb" style="font-weight:bold" align="center">
+								 <table style="width:80% ; background:white;" class="table table-bordered ">
+									 <tr bgcolor="#fcf5ca" style="font-weight:bold;color:470f2d;" align="center">
 										 <td  width="20px">No.</td>   
 										 <td  width="250px">Student's Name</td>
 										 <td  width="80px">Metric No.</td>

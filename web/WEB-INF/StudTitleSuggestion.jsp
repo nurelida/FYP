@@ -177,13 +177,13 @@ int fieldRow = 0;
        <% if(!(svRow==0) && (svStatus.equals("Approved")))
                        {%>
                        
-                       <h2 class="text-center text-capitalize">Project Proposal</h2>
+                       <h2 class="text-center text-capitalize" style="color:#fcf5ca; font-weight:bold;">Project Proposal</h2>
                     
                        <form name="frm_titleSuggestion">
-                           <ul style="padding-left: 100px" class="nav nav-tabs">
-                               <li class="active"><a style="color: #ff6600" href="#projectinfo" data-toggle="tab">Project Information</a></li>
-                        <li><a style="color: #ff6600" href="#projectreq" data-toggle="tab">Project Requirement</a></li>
-                        <li><a style="color: #ff6600" href="#comment" data-toggle="tab">Comment By Proposal Evaluator</a></li>
+                           <ul style="padding-left: 100px; background: #fcf5ca;" class="nav nav-tabs">
+                               <li class="active"><a style="color: #470f2d" href="#projectinfo" data-toggle="tab">Project Information</a></li>
+                        <li><a style="color: #470f2d" href="#projectreq" data-toggle="tab">Project Requirement</a></li>
+                        <li><a style="color: #470f2d" href="#comment" data-toggle="tab">Comment By Proposal Evaluator</a></li>
                         <li style="width:380px"><table style="float:right">
                                  <%if (titleRow==0)
                                         {%>
@@ -225,7 +225,7 @@ int fieldRow = 0;
                              <table border="0" >
                                     <%if (statusTitle.equals("Pending")){%>
                                     
-                                    <p class="text-center"><h4 class="text-center"> You must click the <b>Edit</b> button at the top of project proposal tab before you can update you proposal!</h4></p>
+                                    <p class="text-center"><h4 class="text-center" style="color:#fcf5ca"> You must click the <b>Edit</b> button at the top of project proposal tab before you can update you proposal!</h4></p>
                                     
                                     <% } %>
                                     
@@ -309,7 +309,7 @@ int fieldRow = 0;
                                     <%}
                                         else
                                         {%>
-                                       <div style="padding-left: 14%">
+                                       <div style="color: #fcf5ca;padding-left: 14%">
                                            <strong>Project Type&emsp; :</strong>
                                            <div style="padding-left: 0%;display:inline-table">
                                         <input type="radio"  disabled name="projectType" value="softDev" checked <%if(proType.equals("softDev")){%> checked<%}%>/>Software development<br>
@@ -319,7 +319,7 @@ int fieldRow = 0;
                                        </div>
                                       
                                     
-                                        <div style="padding-left: 14%">
+                                        <div style="color:#fcf5ca;padding-left: 14%">
                                            <strong>Project Field&emsp; :</strong>
                                            <div style="padding-left: 0%;display:inline-table">
                                         

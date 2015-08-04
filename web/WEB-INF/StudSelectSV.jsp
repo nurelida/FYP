@@ -253,14 +253,14 @@ DB objDB = new DB();
                 <%}else{%>
                 <br>
                 <br>
-                <div style="width:500px;margin:auto;" class="panel panel-default">
-  <div class="panel-heading" style="background-color: whitesmoke">
-      <h3  class="panel-title"><b>Supervisor Details</b></h3>
+                <div style="width:500px;margin:auto; background:white;" class="panel panel-default">
+  <div class="panel-heading" style="background-color: #fcf5ca">
+      <h3  class="panel-title"><b style="color:#470f2d">Supervisor Details</b></h3>
   </div>
-  <div class="panel-body alert-warning">
+  <div class="panel-body ">
      
                  
-    <table border="0">
+    <table border="0" style="color:black">
 
                         <tr>
                             <td id="text" width="200px" >Name</td>

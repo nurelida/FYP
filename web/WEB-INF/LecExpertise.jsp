@@ -171,11 +171,11 @@ String Name = (String)session.getAttribute("name");
                                             }
                                         
                            %>
-							 <tr style="background:white; border: 1px solid grey; color:#740f2d">
+							 <tr style="background:white; border: 1px solid grey; color:black">
                            <td><div style="font-weight:bold; "><%=proField%></div><br style="line-height:1px">
                             <%=description.get(i)%></td>
-                           <td valign="top" align="center"><a style="color:#740f2d" href="javascript:;" onclick="editExpertiseID('<%=expertisedId.get(i)%>');"><i style="font-size:1.5em;padding-top: 10px" class="glyphicon glyphicon-edit"></i></a></td>
-                            <td valign="top" align="center"><a style="color:#740f2d" href="javascript:;" onclick="deleteExpertiseID('<%=expertisedId.get(i)%>');"><i style="font-size:1.5em;padding-top:  10px" class="glyphicon glyphicon-floppy-remove"></i></a></td>
+                           <td valign="top" align="center"><a style="color:black" href="javascript:;" onclick="editExpertiseID('<%=expertisedId.get(i)%>');"><i style="font-size:1.5em;padding-top: 10px" class="glyphicon glyphicon-edit"></i></a></td>
+                            <td valign="top" align="center"><a style="color:black" href="javascript:;" onclick="deleteExpertiseID('<%=expertisedId.get(i)%>');"><i style="font-size:1.5em;padding-top:  10px" class="glyphicon glyphicon-floppy-remove"></i></a></td>
                             
                                 
                         </tr>
@@ -202,8 +202,8 @@ String Name = (String)session.getAttribute("name");
                                     <fieldset id="titleSuggestion">
 										<legend style="color:#FCF5CA">Add Expertised Field</legend>
                                             <table style="background:white;">
-                                                 <tr>
-                                                    <td class="desc-text">Expertise Field</td>
+                                                 <tr >
+                                                    <td class="desc-text" style="color:black">Expertise Field</td>
                                                     <td id="colon">:</td>
                                                     <td colspan="2" align="left">
                                                         <select class="form-control" name="addProField" id="inputText" >
@@ -218,7 +218,7 @@ String Name = (String)session.getAttribute("name");
                                                  </tr>
                                                  
                                                  <tr>
-                                                     <td class="desc-text">Decription</td>
+                                                     <td class="desc-text" style="color:black">Decription</td>
                                                      <td id="colon">:</td>
                                                      <td colspan="2"><textarea class="form-control" col="110" rows="5" id="inputText" name="addDescription"></textarea></td>
                                                  </tr>

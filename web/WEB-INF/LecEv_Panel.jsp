@@ -89,7 +89,7 @@ String queryProfile ="Select* from lecturer where staffNo='"+UserSession+"'";
 
         <form>
 			<center><h2 style="font-weight:bold; color:#FCF5CA">Main Assessor (Panel) PSM1</h2></center>
-                    <table class="table" style="width:60%;margin: auto ;background: white;">
+                    <table class="table table-bordered" style="width:60%;margin: auto ;background: white;">
 						<tr style="font-weight:bold; color:#740F2D;" align="center">
                              <td bgcolor="white" width="20px">No.</td>   
                              <td bgcolor="white" width="200px">Student Name</td>
